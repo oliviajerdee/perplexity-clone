@@ -4,7 +4,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { getJson } from "serpapi";
 import OpenAI from 'openai';
 const openai = new OpenAI({
-  apiKey:"AIzaSyDa2i9BFcfN7g_fRGBbcZCgoeQpgRImLP0",
+  apiKey: process.env.GEMINI_API_KEY,
   baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/"
 });
 
